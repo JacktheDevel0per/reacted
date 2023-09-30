@@ -1,4 +1,4 @@
-# reacted README
+# Reacted README
 
 This extention is meant to aid in creating new components easily, generating component functions so you don't have to.
 

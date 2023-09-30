@@ -1,8 +1,13 @@
 {
-    "name": "reacted",
-    "displayName": "Reacted",
+    "name": "reactedjs",
+    "displayName": "ReactedJS",
     "description": "A small set of tools aiming to help with development of react projects",
     "version": "0.0.1",
+    "publisher": "jackthedeveloper",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JackTheDevel0per/reacted.git"
+    },
     "engines": {
         "vscode": "^1.82.0"
     },

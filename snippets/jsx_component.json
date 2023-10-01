@@ -1,0 +1,19 @@
+{
+  "ReactedJS Component": {
+    "prefix": "component",
+    "body": [
+      "",
+      "function ${1:${TM_FILENAME_BASE}}() {",
+      "",
+      "return (",
+      "<>",
+      "$0",
+      "</>",
+      ");",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Log output to console"
+  }
+}

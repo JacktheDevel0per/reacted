@@ -1,40 +1,50 @@
 {
-    "name": "reactedjs",
-    "displayName": "ReactedJS",
-    "description": "A small set of tools aiming to help with development of react projects",
-    "version": "0.0.1",
-    "publisher": "jackthedeveloper",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/JackTheDevel0per/reacted.git"
-    },
-    "engines": {
-        "vscode": "^1.82.0"
-    },
-    "categories": [
-        "Other"
+  "name": "reactedjs",
+  "displayName": "ReactedJS",
+  "description": "A small set of tools aiming to help with development of react projects",
+  "version": "0.0.3",
+  "publisher": "jackthedeveloper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JackTheDevel0per/reacted.git"
+  },
+  "icon": "img/logo.png",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "reacted.newComponent",
+        "title": "New Component"
+      }
     ],
-    "activationEvents": [],
-    "main": "./extension.js",
-    "contributes": {
-        "commands": [{
-            "command": "reacted.newComponent",
-            "title": "New Compponent"
-        }]
-    },
-    "scripts": {
-        "lint": "eslint .",
-        "pretest": "npm run lint",
-        "test": "node ./test/runTest.js"
-    },
-    "devDependencies": {
-        "@types/vscode": "^1.82.0",
-        "@types/mocha": "^10.0.2",
-        "@types/node": "18.x",
-        "eslint": "^8.50.0",
-        "glob": "^10.3.3",
-        "mocha": "^10.2.0",
-        "typescript": "^5.2.2",
-        "@vscode/test-electron": "^2.3.4"
-    }
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/jsx_component.json"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint ./src",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.82.0",
+    "@types/mocha": "^10.0.2",
+    "@types/node": "18.x",
+    "eslint": "^8.50.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2",
+    "@vscode/test-electron": "^2.3.4"
+  }
 }
